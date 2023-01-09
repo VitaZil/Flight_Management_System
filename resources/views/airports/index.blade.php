@@ -1,8 +1,10 @@
 <x-layout>
-
+    <div class="container-airports">
     @include('components.search')
 
-<table>
+
+    <h1 class="title-table">Airports</h1>
+    <table class="airport-table">
     <tr>
         <th>Ident</th>
         <th>Type</th>
@@ -17,6 +19,7 @@
         <th>Local Code</th>
         <th>Coordinates</th>
     </tr>
+
     @foreach($airports as $airport)
         <tr>
             <td>{{ $airport->ident }}</td>
@@ -35,7 +38,8 @@
     @endforeach
 </table>
 
-    <div class="mt-6 p-4">
+    <div class="pagination">
         {{$airports->links()}}
     </div>
+</div>
     </x-layout>

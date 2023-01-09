@@ -1,0 +1,305 @@
+/*main*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    align-items: center;
+    background: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    min-height: 100vh;
+}
+
+/*nav*/
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    margin: 0;
+    font-size: 1.45em;
+}
+
+.main-nav {
+    margin-top: 5px;
+}
+
+.logo a,
+.main-nav a {
+    color: #FFFFFF;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+}
+
+.main-nav a {
+    font-size: 1em;
+}
+
+.main-nav a:hover {
+    color: #c7c4c4;
+}
+
+.header {
+    padding-top: .5em;
+    padding-bottom: .5em;
+    border-bottom: 1px solid #a2a2a2;
+    background-color: #718daa;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*home*/
+
+.home-title {
+    padding-top: 100px;
+}
+
+/*form*/
+.form {
+    box-shadow: 0 0 10px 0 grey;
+    border-radius: 5px;
+    height: 520px;
+    margin: 15px auto;
+    padding: 15px;
+    width: 50%;
+    overflow: auto
+}
+
+.title {
+    text-align: center;
+    color: #65657b;
+    font-family: sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.input-container {
+    height: 30px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.input {
+    background-color: #ececec;
+    border-radius: 5px;
+    border: 1px solid #65657b;
+    color: #65657b;
+    font-size: 15px;
+    height: 100%;
+    padding: 4px 20px 0;
+    width: 100%;
+}
+
+label {
+    color: #65657b;
+    font-family: sans-serif;
+    left: 20px;
+    line-height: 13px;
+    top: 20px;
+}
+
+.btn-container {
+    height: 20px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.button-btn {
+    text-align: center;
+    background-color: #347474 !important;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 40px;
+    width: 100%;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bolder;
+    clear: both
+}
+
+.button-btn:hover {
+    background-color: #1c4b30 !important;
+}
+
+/*airport*/
+
+.table {
+    margin: 20px auto;
+    width: 100%;
+}
+
+.title-table {
+    text-align: left;
+    color: #65657b;
+    font-family: sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 15px;
+}
+
+th, td {
+    border: 1px solid #65657b;
+    padding: 5px;
+    text-align: center;
+}
+
+.container-airports {
+    margin: 0 auto;
+    width: 90%;
+    padding: 0 30px 0 30px;
+    text-align: center;
+}
+
+.pagination {
+    padding: 35px 0 35px 0;
+}
+
+/*show*/
+
+.form-converter {
+    margin: 0;
+}
+
+.title-info {
+    padding: 10px;
+}
+
+.table-head {
+    background-color: #222222;
+}
+
+th {
+    background-color: #222222;
+    color: #FFFFFF;
+}
+
+.show-info-table {
+    margin: 10px auto;
+}
+
+.timezone-title {
+    font-weight: bolder;
+    padding-top: 10px;
+}
+
+.time-calculator {
+    margin: 0 auto;
+}
+
+.show-button {
+    text-align: center;
+    background-color: #10707f;
+    padding: 5px;
+    border: 0;
+    border-radius: 5px;
+    width: 100%;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+/*search*/
+
+.search-container {
+    position: relative;
+    border: 5px solid darkgray;
+    margin: 10px;
+    border-radius: 5px;
+    z-index: 0;
+}
+
+.search-input {
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+
+}
+
+.icon {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    color: #c7c4c4;
+}
+
+.icon:hover {
+    color: #6c757d;
+}
+
+.button-container {
+    position: absolute;
+    top: 7.5px;
+    right: 20px;
+}
+
+.button-search {
+    background-color: #10707f !important;
+    color: #FFFFFF;
+    height: 40px;
+    width: 80px;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+.button-search:hover {
+    background-color: #1c4b30 !important;
+}
+
+/*flights*/
+.filter-container {
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.filter-box {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.filter {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    height: 40px;
+    margin: 10px;
+    align-self: end;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-flights {
+    background-color: #10707f !important;
+    color: #FFFFFF;
+    border-radius: 5px;
+    font-weight: bolder;
+    padding: 6px 18px;
+    margin-top: 7px;
+    font-size: smaller;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+

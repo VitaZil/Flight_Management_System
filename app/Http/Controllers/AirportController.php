@@ -10,6 +10,6 @@ class AirportController extends Controller
     {
         $airports = Airport::latest()->filter(request('search'))->paginate(5);
 
-        return view('airports/index', ['airports' => $airports]);
+        return view('airports.index', ['airports' => $airports]);
     }
 }
