@@ -37,10 +37,13 @@ composer install
 php artisan migrate
 ```
 
-5. Import airport data from https://datahub.io/core/airport-codes (.csv file) to airports table
+5. Generate your application encryption key using `php artisan key:generate`.
+
+6. Import airport data from https://datahub.io/core/airport-codes (.csv file) to airports table
 
 
-6. Start localhost from terminal
+7. Start localhost from terminal
 ```sh
 php artisan serve
 ```
+
