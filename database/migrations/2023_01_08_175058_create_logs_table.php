@@ -12,9 +12,9 @@ return new class extends Migration
             $table->id();
             $table->string('flight_id');
             $table->dateTime('departure_time');
-            $table->bigInteger('depairport');
+            $table->bigInteger('departure_airport_id');
             $table->dateTime('arrival_time');
-            $table->bigInteger('arrairport');
+            $table->bigInteger('arrival_airport_id');
             $table->string('timezone');
             $table->integer('seats');
             $table->timestamps();

@@ -22,10 +22,10 @@ Route::get('/', function () {
 Route::get('/airports', [AirportController::class, 'index']);
 
 Route::get('/flights', [FlightController::class, 'index']);
-Route::post('/flights', [FlightController::class, 'filter']);
+Route::get('/flights/filter', [FlightController::class, 'filter']);
+Route::get('/flights/create', [FlightController::class, 'create']);
 Route::get('/flights/{flight}', [FlightController::class, 'show']);
 Route::post('/flights/{flight}/time', [FlightController::class, 'time']);
-Route::get('/flights/create', [FlightController::class, 'create']);
 Route::post('/flights/create', [FlightController::class, 'store']);
 Route::get('/flights/{flight}/edit', [FlightController::class, 'edit']);
 Route::put('/flights/{flight}/update', [FlightController::class, 'update']);

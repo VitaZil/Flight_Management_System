@@ -11,7 +11,7 @@
 
         <div class="input-container">
         <label for="depairport">Departure Airport</label>
-        <select class="input" name="depairport" id="depairport" required>
+        <select class="input" name="departure_airport_id" id="departure_airport_id" required>
             @foreach($airports as $airport)
                 <option value="{{ $airport->id }}">{{ $airport->name }}</option>
             @endforeach
@@ -25,7 +25,7 @@
 
                 <div class="input-container">
         <label for="arrairport">Arrival Airport</label>
-        <select class="input" name="arrairport" id="arrairport" required>
+        <select class="input" name="arrival_airport_id" id="arrival_airport_id" required>
             @foreach($airports as $airport)
                 <option value="{{ $airport->id }}">{{ $airport->name }}</option>
             @endforeach

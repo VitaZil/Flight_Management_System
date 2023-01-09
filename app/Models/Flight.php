@@ -26,11 +26,11 @@ class Flight extends Model
 
     public function departureAirport(): BelongsTo
     {
-        return $this->belongsTo(Airport::class, 'depairport');
+        return $this->belongsTo(Airport::class, 'departure_airport_id');
     }
 
     public function arrivalAirport(): BelongsTo
     {
-        return $this->belongsTo(Airport::class, 'arrairport');
+        return $this->belongsTo(Airport::class, 'arrival_airport_id');
     }
 }

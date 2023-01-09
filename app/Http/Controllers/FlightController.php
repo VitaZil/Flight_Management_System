@@ -41,9 +41,9 @@ class FlightController extends Controller
     {
         $formFields = $request->validate([
             'departure_time' => 'required',
-            'depairport' => 'required',
+            'departure_airport_id' => 'required',
             'arrival_time' => 'required',
-            'arrairport' => 'required',
+            'arrival_airport_id' => 'required',
             'timezone' => 'required',
             'seats' => 'required'
         ]);
@@ -65,9 +65,9 @@ class FlightController extends Controller
     {
         $formFields = [
             'departure_time' => $request['departure_time'],
-            'depairport' => $request['depairport'],
+            'departure_airport_id' => $request['departure_airport_id'],
             'arrival_time' => $request['arrival_time'],
-            'arrairport' => $request['arrairport'],
+            'arrival_airport_id' => $request['arrival_airport_id'],
             'timezone' => $request['timezone'],
             'seats' => $request['seats']
         ];
@@ -77,9 +77,9 @@ class FlightController extends Controller
         $log->create([
             'flight_id' => $flight->id,
             'departure_time' => $request['departure_time'],
-            'depairport' => $request['depairport'],
+            'departure_airport_id' => $request['departure_airport_id'],
             'arrival_time' => $request['arrival_time'],
-            'arrairport' => $request['arrairport'],
+            'arrival_airport_id' => $request['arrival_airport_id'],
             'timezone' => $request['timezone'],
             'seats' => $request['seats']
         ]);

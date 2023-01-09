@@ -3,7 +3,7 @@
         <div class="filter-box">
 
     <div class="filter">
-        <form method="POST" action="/flights" class="flight-form">
+        <form action="flights/filter" class="flight-form">
             @csrf
             <div class="input-container form-converter input-filter">
                 <select class="input" name="newtimezone" id="newtimezone" required>

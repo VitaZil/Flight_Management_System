@@ -11,11 +11,11 @@ return new class extends Migration
         Schema::create('flights', function (Blueprint $table) {
             $table->id();
             $table->dateTime('departure_time');
-            $table->bigInteger('depairport')->unsigned();
-            $table->foreign('depairport')->references('id')->on('airports')->onDelete('cascade');
+            $table->bigInteger('departure_airport_id')->unsigned();
+            $table->foreign('departure_airport_id')->references('id')->on('airports')->onDelete('cascade');
             $table->dateTime('arrival_time');
-            $table->bigInteger('arrairport')->unsigned();
-            $table->foreign('arrairport')->references('id')->on('airports')->onDelete('cascade');
+            $table->bigInteger('arrival_airport_id')->unsigned();
+            $table->foreign('arrival_airport_id')->references('id')->on('airports')->onDelete('cascade');
             $table->string('timezone');
             $table->integer('seats');
             $table->timestamps();
