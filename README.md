@@ -1,4 +1,4 @@
-﻿﻿# Flights Management App
+﻿# Flights Management App
 
 ## In Flights Management App you can do:
 
@@ -9,7 +9,7 @@
 - Search throw all airport
 - Modify flight details
 - Delete flight
-- View one flight and check different timezone and time
+- View one flight details and check different timezone and time
 
 
 ## Built With
@@ -37,10 +37,13 @@ composer install
 php artisan migrate
 ```
 
-5. Import airport data from https://datahub.io/core/airport-codes (.csv file) to airports table
+5. Generate your application encryption key using `php artisan key:generate`.
+
+6. Import airport data from https://datahub.io/core/airport-codes (.csv file) to airports table
 
 
-6. Start localhost from terminal
+7. Start localhost from terminal
 ```sh
 php artisan serve
 ```
+
