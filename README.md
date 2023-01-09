@@ -1,4 +1,4 @@
-﻿﻿# Flights Management App
+﻿# Flights Management App
 
 ## In Flights Management App you can do:
 
