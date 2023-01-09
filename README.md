@@ -9,7 +9,7 @@
 - Search throw all airport
 - Modify flight details
 - Delete flight
-- View one flight and check different timezone and time
+- View one flight details and check different timezone and time
 
 
 ## Built With
