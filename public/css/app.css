@@ -261,8 +261,10 @@ th {
 
 /*flights*/
 .filter-container {
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
-    padding: 40px;
+    padding: 80px;
 }
 
 .filter-box {
@@ -290,6 +292,12 @@ th {
     margin-top: 7px;
     font-size: smaller;
     width: 100%;
+}
+
+.no-flights {
+    font-weight: bolder;
+    color: #65657b;
+    padding: 15px;
 }
 
 
